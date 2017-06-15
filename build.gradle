@@ -1,0 +1,28 @@
+group 'webSockte'
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.0.RELEASE")
+    }
+}
+dependencies {
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-parent', version: '1.2.2.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-websocket', version: '1.4.2.RELEASE'
+    compile 'org.springframework.boot:spring-boot-starter-web:1.4.0.RELEASE'
+    compile 'org.springframework:spring-context-support:4.0.7.RELEASE'
+    // apache commons
+    compile 'org.apache.commons:commons-lang3:3.4'
+    compile 'commons-configuration:commons-configuration:1.10'
+    //rabbitmq
+    compile 'org.springframework.boot:spring-boot-starter-amqp'
+}

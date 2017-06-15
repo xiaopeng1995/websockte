@@ -1,0 +1,304 @@
+2017-05-23 10:28:06.173  INFO 35248 --- [main] xiaopeng666.top.Application              : Starting Application on DESKTOP-2C8EB59 with PID 35248 (F:\IdeaProjects\websockte\build\classes\main started by xiaopeng in F:\IdeaProjects\websockte)
+2017-05-23 10:28:06.176 DEBUG 35248 --- [main] xiaopeng666.top.Application              : Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+2017-05-23 10:28:06.177  INFO 35248 --- [main] xiaopeng666.top.Application              : No active profile set, falling back to default profiles: default
+2017-05-23 10:28:06.223  INFO 35248 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Tue May 23 10:28:06 CST 2017]; root of context hierarchy
+2017-05-23 10:28:07.200  INFO 35248 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$70b88655] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-23 10:28:07.720  INFO 35248 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8001 (http)
+2017-05-23 10:28:07.734  INFO 35248 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-23 10:28:07.735  INFO 35248 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-05-23 10:28:07.876  INFO 35248 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-23 10:28:07.876  INFO 35248 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1657 ms
+2017-05-23 10:28:08.053  INFO 35248 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-23 10:28:08.056  INFO 35248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-23 10:28:08.057  INFO 35248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-23 10:28:08.058  INFO 35248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-23 10:28:08.058  INFO 35248 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-23 10:28:08.184  INFO 35248 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2017-05-23 10:28:08.205  INFO 35248 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/counter] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2017-05-23 10:28:08.553  INFO 35248 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Tue May 23 10:28:06 CST 2017]; root of context hierarchy
+2017-05-23 10:28:08.612  INFO 35248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-23 10:28:08.613  INFO 35248 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-23 10:28:08.647  INFO 35248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-23 10:28:08.647  INFO 35248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-23 10:28:08.694  INFO 35248 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-23 10:28:08.938  INFO 35248 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class xiaopeng666.top.websockte.MyWebSocket
+2017-05-23 10:28:08.948  INFO 35248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-23 10:28:08.954  INFO 35248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'connectionFactory' has been autodetected for JMX exposure
+2017-05-23 10:28:08.957  INFO 35248 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'connectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=connectionFactory,type=CachingConnectionFactory]
+2017-05-23 10:28:08.971  INFO 35248 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-05-23 10:28:08.973  INFO 35248 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-05-23 10:28:09.043  INFO 35248 --- [messageContainer-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@2f0f0e3e [delegate=amqp://zenin@139.196.235.75:5672/, localPort= 65354]
+2017-05-23 10:28:09.044  INFO 35248 --- [messageContainer-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hello1) durable:true, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2017-05-23 10:28:09.166  INFO 35248 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8001 (http)
+2017-05-23 10:28:09.172  INFO 35248 --- [main] xiaopeng666.top.Application              : Started Application in 3.323 seconds (JVM running for 3.738)
+2017-05-23 10:28:30.761 ERROR 35248 --- [messageContainer-1] xiaopeng666.top.mq.ApplicationStartup    : 为启动客户端,跳过.
+2017-05-23 10:28:31.902 ERROR 35248 --- [messageContainer-1] xiaopeng666.top.mq.ApplicationStartup    : 为启动客户端,跳过.
+2017-05-23 10:28:32.525 ERROR 35248 --- [messageContainer-1] xiaopeng666.top.mq.ApplicationStartup    : 为启动客户端,跳过.
+2017-05-23 10:31:43.617  INFO 27520 --- [main] xiaopeng666.top.Application              : Starting Application on DESKTOP-2C8EB59 with PID 27520 (F:\IdeaProjects\websockte\build\classes\main started by xiaopeng in F:\IdeaProjects\websockte)
+2017-05-23 10:31:43.619 DEBUG 27520 --- [main] xiaopeng666.top.Application              : Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+2017-05-23 10:31:43.619  INFO 27520 --- [main] xiaopeng666.top.Application              : No active profile set, falling back to default profiles: default
+2017-05-23 10:31:43.663  INFO 27520 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Tue May 23 10:31:43 CST 2017]; root of context hierarchy
+2017-05-23 10:31:44.648  INFO 27520 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7408a6e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-23 10:31:45.132  INFO 27520 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8001 (http)
+2017-05-23 10:31:45.148  INFO 27520 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-23 10:31:45.150  INFO 27520 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-05-23 10:31:45.274  INFO 27520 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-23 10:31:45.274  INFO 27520 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1613 ms
+2017-05-23 10:31:45.482  INFO 27520 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-23 10:31:45.486  INFO 27520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-23 10:31:45.486  INFO 27520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-23 10:31:45.489  INFO 27520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-23 10:31:45.490  INFO 27520 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-23 10:31:45.694  INFO 27520 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2017-05-23 10:31:45.721  INFO 27520 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/counter] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2017-05-23 10:31:46.040  INFO 27520 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Tue May 23 10:31:43 CST 2017]; root of context hierarchy
+2017-05-23 10:31:46.097  INFO 27520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-23 10:31:46.098  INFO 27520 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-23 10:31:46.125  INFO 27520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-23 10:31:46.126  INFO 27520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-23 10:31:46.175  INFO 27520 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-23 10:31:46.417  INFO 27520 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class xiaopeng666.top.websockte.MyWebSocket
+2017-05-23 10:31:46.429  INFO 27520 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-23 10:31:46.434  INFO 27520 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-05-23 10:31:46.437  INFO 27520 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-05-23 10:31:46.451  INFO 27520 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-05-23 10:31:46.451  INFO 27520 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-05-23 10:31:46.520  INFO 27520 --- [messageContainer-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@66b8fb93 [delegate=amqp://zenin@139.196.235.75:5672/, localPort= 65387]
+2017-05-23 10:31:46.521  INFO 27520 --- [messageContainer-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hello1) durable:true, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2017-05-23 10:31:46.636  INFO 27520 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8001 (http)
+2017-05-23 10:31:46.639  INFO 27520 --- [main] xiaopeng666.top.Application              : Started Application in 3.366 seconds (JVM running for 3.705)
+2017-05-23 10:32:17.126 ERROR 27520 --- [messageContainer-1] xiaopeng666.top.mq.ApplicationStartup    : 为启动客户端,跳过.
+2017-05-23 10:32:18.753  INFO 27520 --- [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-05-23 10:32:18.753  INFO 27520 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-05-23 10:32:18.765  INFO 27520 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 12 ms
+2017-05-23 19:50:02.574  INFO 39736 --- [main] xiaopeng666.top.Application              : Starting Application on DESKTOP-2C8EB59 with PID 39736 (F:\IdeaProjects\websockte\build\classes\main started by xiaopeng in F:\IdeaProjects\websockte)
+2017-05-23 19:50:02.593 DEBUG 39736 --- [main] xiaopeng666.top.Application              : Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+2017-05-23 19:50:02.595  INFO 39736 --- [main] xiaopeng666.top.Application              : No active profile set, falling back to default profiles: default
+2017-05-23 19:50:02.651  INFO 39736 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Tue May 23 19:50:02 CST 2017]; root of context hierarchy
+2017-05-23 19:50:03.691  INFO 39736 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7408a6e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-05-23 19:50:04.206  INFO 39736 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8001 (http)
+2017-05-23 19:50:04.227  INFO 39736 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-05-23 19:50:04.229  INFO 39736 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-05-23 19:50:04.348  INFO 39736 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-05-23 19:50:04.349  INFO 39736 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1701 ms
+2017-05-23 19:50:04.526  INFO 39736 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-05-23 19:50:04.530  INFO 39736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-05-23 19:50:04.531  INFO 39736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-05-23 19:50:04.532  INFO 39736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-05-23 19:50:04.532  INFO 39736 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-05-23 19:50:04.688  INFO 39736 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2017-05-23 19:50:04.708  INFO 39736 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/counter] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2017-05-23 19:50:05.016  INFO 39736 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Tue May 23 19:50:02 CST 2017]; root of context hierarchy
+2017-05-23 19:50:05.082  INFO 39736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-05-23 19:50:05.084  INFO 39736 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-05-23 19:50:05.123  INFO 39736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-23 19:50:05.123  INFO 39736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-23 19:50:05.181  INFO 39736 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-05-23 19:50:05.430  INFO 39736 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class xiaopeng666.top.websockte.MyWebSocket
+2017-05-23 19:50:05.444  INFO 39736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-05-23 19:50:05.452  INFO 39736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-05-23 19:50:05.455  INFO 39736 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-05-23 19:50:05.475  INFO 39736 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-05-23 19:50:05.476  INFO 39736 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-05-23 19:50:05.529  INFO 39736 --- [messageContainer-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@6ce47fa3 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 64775]
+2017-05-23 19:50:05.532  INFO 39736 --- [messageContainer-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (test) durable:true, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2017-05-23 19:50:05.647  INFO 39736 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8001 (http)
+2017-05-23 19:50:05.652  INFO 39736 --- [main] xiaopeng666.top.Application              : Started Application in 3.419 seconds (JVM running for 3.856)
+2017-05-23 19:50:11.546 ERROR 39736 --- [messageContainer-1] xiaopeng666.top.mq.ApplicationStartup    : 为启动客户端,跳过.
+2017-06-15 09:45:34.860  INFO 11720 --- [main] xiaopeng666.top.Application              : Starting Application on DESKTOP-2C8EB59 with PID 11720 (F:\IdeaProjects\websockte\build\classes\main started by xiaopeng in F:\IdeaProjects\websockte)
+2017-06-15 09:45:34.879 DEBUG 11720 --- [main] xiaopeng666.top.Application              : Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+2017-06-15 09:45:34.879  INFO 11720 --- [main] xiaopeng666.top.Application              : No active profile set, falling back to default profiles: default
+2017-06-15 09:45:34.935  INFO 11720 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 09:45:34 CST 2017]; root of context hierarchy
+2017-06-15 09:45:36.606  INFO 11720 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$8bd79285] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-15 09:45:37.286  INFO 11720 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8001 (http)
+2017-06-15 09:45:37.324  INFO 11720 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-15 09:45:37.326  INFO 11720 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-06-15 09:45:37.454  INFO 11720 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-15 09:45:37.454  INFO 11720 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2521 ms
+2017-06-15 09:45:37.685  INFO 11720 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-15 09:45:37.691  INFO 11720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-15 09:45:37.692  INFO 11720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-15 09:45:37.694  INFO 11720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-15 09:45:37.695  INFO 11720 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-15 09:45:38.023  INFO 11720 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2017-06-15 09:45:38.050  INFO 11720 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/counter] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2017-06-15 09:45:38.384  INFO 11720 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 09:45:34 CST 2017]; root of context hierarchy
+2017-06-15 09:45:38.463  INFO 11720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-15 09:45:38.464  INFO 11720 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-15 09:45:38.518  INFO 11720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 09:45:38.518  INFO 11720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 09:45:38.556  INFO 11720 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 09:45:38.899  INFO 11720 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class xiaopeng666.top.websockte.MyWebSocket
+2017-06-15 09:45:38.909  INFO 11720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-15 09:45:38.917  INFO 11720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-06-15 09:45:38.924  INFO 11720 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-06-15 09:45:38.963  INFO 11720 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-06-15 09:45:38.964  INFO 11720 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-06-15 09:45:39.142  INFO 11720 --- [messageContainer-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@46fcef8f [delegate=amqp://zenin@139.196.235.75:5672/, localPort= 50911]
+2017-06-15 09:45:39.145  INFO 11720 --- [messageContainer-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hello1) durable:true, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2017-06-15 09:45:39.299  INFO 11720 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8001 (http)
+2017-06-15 09:45:39.313  INFO 11720 --- [main] xiaopeng666.top.Application              : Started Application in 5.182 seconds (JVM running for 5.711)
+2017-06-15 09:45:55.250 ERROR 11720 --- [messageContainer-1] xiaopeng666.top.mq.ApplicationStartup    : 未启动客户端,跳过.
+2017-06-15 09:46:12.381 ERROR 11720 --- [messageContainer-1] xiaopeng666.top.mq.ApplicationStartup    : 未启动客户端,跳过.
+2017-06-15 09:46:55.280 ERROR 11720 --- [messageContainer-1] xiaopeng666.top.mq.ApplicationStartup    : 未启动客户端,跳过.
+2017-06-15 09:47:12.436 ERROR 11720 --- [messageContainer-1] xiaopeng666.top.mq.ApplicationStartup    : 未启动客户端,跳过.
+2017-06-15 09:47:42.756  INFO 11720 --- [http-nio-8001-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [[visit_times]=2; AJSTAT_ok_times=2; Hm_lvt_477fe43938cc0a6ad783d1795bdffd93=1496899550; CNZZDATA1260683767=160501042-1496897805-http%253A%252F%252F127.0.0.1%253A88%252F%7C1496897805] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2017-06-15 09:47:42.766  INFO 11720 --- [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-06-15 09:47:42.766  INFO 11720 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-15 09:47:42.782  INFO 11720 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2017-06-15 10:12:01.823  INFO 12472 --- [main] xiaopeng666.top.Application              : Starting Application on DESKTOP-2C8EB59 with PID 12472 (F:\myProjects\websockte\build\classes\main started by xiaopeng in F:\myProjects\websockte)
+2017-06-15 10:12:01.827 DEBUG 12472 --- [main] xiaopeng666.top.Application              : Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+2017-06-15 10:12:01.827  INFO 12472 --- [main] xiaopeng666.top.Application              : No active profile set, falling back to default profiles: default
+2017-06-15 10:12:01.872  INFO 12472 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:12:01 CST 2017]; root of context hierarchy
+2017-06-15 10:12:02.827  INFO 12472 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7408a6e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-15 10:12:03.293  INFO 12472 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8001 (http)
+2017-06-15 10:12:03.307  INFO 12472 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-15 10:12:03.309  INFO 12472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-06-15 10:12:03.399  INFO 12472 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-15 10:12:03.400  INFO 12472 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1530 ms
+2017-06-15 10:12:03.538  INFO 12472 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-15 10:12:03.542  INFO 12472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-15 10:12:03.543  INFO 12472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-15 10:12:03.544  INFO 12472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-15 10:12:03.545  INFO 12472 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-15 10:12:03.738  INFO 12472 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2017-06-15 10:12:03.767  INFO 12472 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/counter] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2017-06-15 10:12:04.076  INFO 12472 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:12:01 CST 2017]; root of context hierarchy
+2017-06-15 10:12:04.161  INFO 12472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-15 10:12:04.163  INFO 12472 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-15 10:12:04.193  INFO 12472 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:12:04.193  INFO 12472 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:12:04.232  INFO 12472 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:12:05.105  INFO 12472 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class xiaopeng666.top.websockte.MyWebSocket
+2017-06-15 10:12:05.120  INFO 12472 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-15 10:12:05.127  INFO 12472 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-06-15 10:12:05.131  INFO 12472 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-06-15 10:12:05.150  INFO 12472 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-06-15 10:12:05.150  INFO 12472 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-06-15 10:12:05.222  INFO 12472 --- [messageContainer-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@e6f7064 [delegate=amqp://zenin@139.196.235.75:5672/, localPort= 51568]
+2017-06-15 10:12:05.225  INFO 12472 --- [messageContainer-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hello1) durable:true, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2017-06-15 10:12:05.346 ERROR 12472 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-8001]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_65]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at xiaopeng666.top.Application.main(Application.java:15) [main/:na]
+
+2017-06-15 10:12:05.353 ERROR 12472 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8001]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8001]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:158) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at xiaopeng666.top.Application.main(Application.java:15) [main/:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1042) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_65]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 14 common frames omitted
+
+2017-06-15 10:12:05.366  INFO 12472 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-06-15 10:12:05.401  INFO 12472 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2017-06-15 10:12:05.409 ERROR 12472 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
+
+2017-06-15 10:12:05.414  INFO 12472 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:12:01 CST 2017]; root of context hierarchy
+2017-06-15 10:12:05.416  INFO 12472 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-06-15 10:12:05.426  INFO 12472 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2017-06-15 10:12:06.302  INFO 12472 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2017-06-15 10:12:06.302  INFO 12472 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2017-06-15 10:12:06.302  INFO 12472 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-06-15 10:12:06.302  INFO 12472 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-06-15 10:12:06.303  INFO 12472 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'defaultSockJsTaskScheduler'
+2017-06-15 10:12:17.722  INFO 17664 --- [main] xiaopeng666.top.Application              : Starting Application on DESKTOP-2C8EB59 with PID 17664 (F:\myProjects\websockte\build\classes\main started by xiaopeng in F:\myProjects\websockte)
+2017-06-15 10:12:17.726 DEBUG 17664 --- [main] xiaopeng666.top.Application              : Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+2017-06-15 10:12:17.726  INFO 17664 --- [main] xiaopeng666.top.Application              : No active profile set, falling back to default profiles: default
+2017-06-15 10:12:17.772  INFO 17664 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:12:17 CST 2017]; root of context hierarchy
+2017-06-15 10:12:18.741  INFO 17664 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7408a6e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-15 10:12:19.188  INFO 17664 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8001 (http)
+2017-06-15 10:12:19.200  INFO 17664 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-15 10:12:19.202  INFO 17664 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-06-15 10:12:19.320  INFO 17664 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-15 10:12:19.320  INFO 17664 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1550 ms
+2017-06-15 10:12:19.469  INFO 17664 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-15 10:12:19.477  INFO 17664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-15 10:12:19.478  INFO 17664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-15 10:12:19.479  INFO 17664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-15 10:12:19.480  INFO 17664 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-15 10:12:19.654  INFO 17664 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2017-06-15 10:12:19.677  INFO 17664 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/counter] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2017-06-15 10:12:19.960  INFO 17664 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:12:17 CST 2017]; root of context hierarchy
+2017-06-15 10:12:20.044  INFO 17664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-15 10:12:20.045  INFO 17664 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-15 10:12:20.100  INFO 17664 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:12:20.100  INFO 17664 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:12:20.144  INFO 17664 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:12:20.339  INFO 17664 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class xiaopeng666.top.websockte.MyWebSocket
+2017-06-15 10:12:20.348  INFO 17664 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-15 10:12:20.354  INFO 17664 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-06-15 10:12:20.356  INFO 17664 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-06-15 10:12:20.370  INFO 17664 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-06-15 10:12:20.370  INFO 17664 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-06-15 10:12:20.432  INFO 17664 --- [messageContainer-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@3e62b7dc [delegate=amqp://zenin@139.196.235.75:5672/, localPort= 51578]
+2017-06-15 10:12:20.433  INFO 17664 --- [messageContainer-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hello1) durable:true, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2017-06-15 10:12:20.533  INFO 17664 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8001 (http)
+2017-06-15 10:12:20.538  INFO 17664 --- [main] xiaopeng666.top.Application              : Started Application in 3.152 seconds (JVM running for 3.442)
+2017-06-15 10:12:30.222  INFO 17664 --- [http-nio-8001-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [[visit_times]=2; AJSTAT_ok_times=2; Hm_lvt_477fe43938cc0a6ad783d1795bdffd93=1496899550; CNZZDATA1260683767=160501042-1496897805-http%253A%252F%252F127.0.0.1%253A88%252F%7C1496897805] that contained an invalid cookie. That cookie will be ignored.Note: further occurrences of this error will be logged at DEBUG level.
+2017-06-15 10:12:30.227  INFO 17664 --- [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-06-15 10:12:30.227  INFO 17664 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-15 10:12:30.242  INFO 17664 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
