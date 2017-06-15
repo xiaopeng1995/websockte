@@ -302,3 +302,360 @@ Identify and stop the process that's listening on port 8001 or configure this ap
 2017-06-15 10:12:30.227  INFO 17664 --- [http-nio-8001-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
 2017-06-15 10:12:30.227  INFO 17664 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
 2017-06-15 10:12:30.242  INFO 17664 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2017-06-15 10:32:32.623  INFO 7364 --- [main] xiaopeng666.top.Application              : Starting Application on DESKTOP-2C8EB59 with PID 7364 (F:\myProjects\websockte\build\classes\main started by xiaopeng in F:\myProjects\websockte)
+2017-06-15 10:32:32.626 DEBUG 7364 --- [main] xiaopeng666.top.Application              : Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+2017-06-15 10:32:32.626  INFO 7364 --- [main] xiaopeng666.top.Application              : No active profile set, falling back to default profiles: default
+2017-06-15 10:32:32.666  INFO 7364 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:32:32 CST 2017]; root of context hierarchy
+2017-06-15 10:32:33.595  INFO 7364 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7408a6e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-15 10:32:34.064  INFO 7364 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8001 (http)
+2017-06-15 10:32:34.078  INFO 7364 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-15 10:32:34.079  INFO 7364 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-06-15 10:32:34.192  INFO 7364 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-15 10:32:34.192  INFO 7364 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1529 ms
+2017-06-15 10:32:34.349  INFO 7364 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-15 10:32:34.354  INFO 7364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-15 10:32:34.355  INFO 7364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-15 10:32:34.356  INFO 7364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-15 10:32:34.356  INFO 7364 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-15 10:32:34.564  INFO 7364 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2017-06-15 10:32:34.588  INFO 7364 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/counter] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2017-06-15 10:32:34.856  INFO 7364 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:32:32 CST 2017]; root of context hierarchy
+2017-06-15 10:32:34.914  INFO 7364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-15 10:32:34.915  INFO 7364 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-15 10:32:34.950  INFO 7364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:32:34.951  INFO 7364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:32:34.989  INFO 7364 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:32:35.216  INFO 7364 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class xiaopeng666.top.websockte.MyWebSocket
+2017-06-15 10:32:35.225  INFO 7364 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-15 10:32:35.235  INFO 7364 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-06-15 10:32:35.240  INFO 7364 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-06-15 10:32:35.262  INFO 7364 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-06-15 10:32:35.263  INFO 7364 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-06-15 10:32:35.328  INFO 7364 --- [messageContainer-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@2205b048 [delegate=amqp://zenin@106.15.136.204:5672/, localPort= 51846]
+2017-06-15 10:32:35.329  INFO 7364 --- [messageContainer-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hello1) durable:true, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2017-06-15 10:32:35.440 ERROR 7364 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-8001]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_65]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at xiaopeng666.top.Application.main(Application.java:15) [main/:na]
+
+2017-06-15 10:32:35.466 ERROR 7364 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8001]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8001]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:158) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at xiaopeng666.top.Application.main(Application.java:15) [main/:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1042) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_65]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 14 common frames omitted
+
+2017-06-15 10:32:35.485  INFO 7364 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-06-15 10:32:35.498  INFO 7364 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2017-06-15 10:32:35.505 ERROR 7364 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
+
+2017-06-15 10:32:35.513  INFO 7364 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:32:32 CST 2017]; root of context hierarchy
+2017-06-15 10:32:35.515  INFO 7364 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-06-15 10:32:35.530  INFO 7364 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2017-06-15 10:32:36.397  INFO 7364 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2017-06-15 10:32:36.398  INFO 7364 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2017-06-15 10:32:36.399  INFO 7364 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-06-15 10:32:36.399  INFO 7364 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-06-15 10:32:36.400  INFO 7364 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'defaultSockJsTaskScheduler'
+2017-06-15 10:32:39.695  INFO 13452 --- [main] xiaopeng666.top.Application              : Starting Application on DESKTOP-2C8EB59 with PID 13452 (F:\myProjects\websockte\build\classes\main started by xiaopeng in F:\myProjects\websockte)
+2017-06-15 10:32:39.698 DEBUG 13452 --- [main] xiaopeng666.top.Application              : Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+2017-06-15 10:32:39.699  INFO 13452 --- [main] xiaopeng666.top.Application              : No active profile set, falling back to default profiles: default
+2017-06-15 10:32:39.746  INFO 13452 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:32:39 CST 2017]; root of context hierarchy
+2017-06-15 10:32:40.796  INFO 13452 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7408a6e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-15 10:32:41.269  INFO 13452 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8001 (http)
+2017-06-15 10:32:41.280  INFO 13452 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-15 10:32:41.282  INFO 13452 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-06-15 10:32:41.401  INFO 13452 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-15 10:32:41.401  INFO 13452 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1658 ms
+2017-06-15 10:32:41.556  INFO 13452 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-15 10:32:41.560  INFO 13452 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-15 10:32:41.562  INFO 13452 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-15 10:32:41.562  INFO 13452 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-15 10:32:41.563  INFO 13452 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-15 10:32:41.728  INFO 13452 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2017-06-15 10:32:41.748  INFO 13452 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/counter] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2017-06-15 10:32:42.023  INFO 13452 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:32:39 CST 2017]; root of context hierarchy
+2017-06-15 10:32:42.086  INFO 13452 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-15 10:32:42.087  INFO 13452 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-15 10:32:42.136  INFO 13452 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:32:42.136  INFO 13452 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:32:42.177  INFO 13452 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:32:42.400  INFO 13452 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class xiaopeng666.top.websockte.MyWebSocket
+2017-06-15 10:32:42.408  INFO 13452 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-15 10:32:42.415  INFO 13452 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-06-15 10:32:42.419  INFO 13452 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-06-15 10:32:42.433  INFO 13452 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-06-15 10:32:42.434  INFO 13452 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-06-15 10:32:42.593  INFO 13452 --- [messageContainer-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@3184378e [delegate=amqp://zenin@106.15.136.204:5672/, localPort= 51857]
+2017-06-15 10:32:42.594  INFO 13452 --- [messageContainer-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hello1) durable:true, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2017-06-15 10:32:43.166 ERROR 13452 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-8001]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_65]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at xiaopeng666.top.Application.main(Application.java:15) [main/:na]
+
+2017-06-15 10:32:43.171 ERROR 13452 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8001]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8001]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:158) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at xiaopeng666.top.Application.main(Application.java:15) [main/:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1042) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_65]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 14 common frames omitted
+
+2017-06-15 10:32:43.181  INFO 13452 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-06-15 10:32:43.189  INFO 13452 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2017-06-15 10:32:43.197 ERROR 13452 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
+
+2017-06-15 10:32:43.201  INFO 13452 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:32:39 CST 2017]; root of context hierarchy
+2017-06-15 10:32:43.202  INFO 13452 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-06-15 10:32:43.476  INFO 13452 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2017-06-15 10:32:44.145  INFO 13452 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2017-06-15 10:32:44.146  INFO 13452 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2017-06-15 10:32:44.147  INFO 13452 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-06-15 10:32:44.148  INFO 13452 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-06-15 10:32:44.149  INFO 13452 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'defaultSockJsTaskScheduler'
+2017-06-15 10:32:55.720  INFO 12484 --- [main] xiaopeng666.top.Application              : Starting Application on DESKTOP-2C8EB59 with PID 12484 (F:\myProjects\websockte\build\classes\main started by xiaopeng in F:\myProjects\websockte)
+2017-06-15 10:32:55.722 DEBUG 12484 --- [main] xiaopeng666.top.Application              : Running with Spring Boot v1.4.0.RELEASE, Spring v4.3.2.RELEASE
+2017-06-15 10:32:55.722  INFO 12484 --- [main] xiaopeng666.top.Application              : No active profile set, falling back to default profiles: default
+2017-06-15 10:32:55.763  INFO 12484 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:32:55 CST 2017]; root of context hierarchy
+2017-06-15 10:32:56.765  INFO 12484 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [class org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$7408a6e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-06-15 10:32:57.371  INFO 12484 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8001 (http)
+2017-06-15 10:32:57.387  INFO 12484 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-15 10:32:57.388  INFO 12484 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2017-06-15 10:32:57.481  INFO 12484 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-15 10:32:57.482  INFO 12484 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1722 ms
+2017-06-15 10:32:57.635  INFO 12484 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-15 10:32:57.640  INFO 12484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-15 10:32:57.640  INFO 12484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-15 10:32:57.641  INFO 12484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-15 10:32:57.641  INFO 12484 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-15 10:32:57.807  INFO 12484 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2017-06-15 10:32:57.842  INFO 12484 --- [main] o.s.w.s.s.s.WebSocketHandlerMapping      : Mapped URL path [/counter] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2017-06-15 10:32:58.181  INFO 12484 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:32:55 CST 2017]; root of context hierarchy
+2017-06-15 10:32:58.242  INFO 12484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-15 10:32:58.244  INFO 12484 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-15 10:32:58.274  INFO 12484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:32:58.278  INFO 12484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:32:58.318  INFO 12484 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-15 10:32:58.559  INFO 12484 --- [main] o.s.w.s.s.s.ServerEndpointExporter       : Registering @ServerEndpoint class: class xiaopeng666.top.websockte.MyWebSocket
+2017-06-15 10:32:58.572  INFO 12484 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-15 10:32:58.582  INFO 12484 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-06-15 10:32:58.586  INFO 12484 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-06-15 10:32:58.602  INFO 12484 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-06-15 10:32:58.603  INFO 12484 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-06-15 10:32:58.675  INFO 12484 --- [messageContainer-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@3e62b7dc [delegate=amqp://zenin@106.15.136.204:5672/, localPort= 51867]
+2017-06-15 10:32:58.677  INFO 12484 --- [messageContainer-1] o.s.amqp.rabbit.core.RabbitAdmin         : Auto-declaring a non-durable, auto-delete, or exclusive Queue (hello1) durable:true, auto-delete:true, exclusive:false. It will be redeclared if the broker stops and is restarted while the connection factory is alive, but all messages will be lost.
+2017-06-15 10:32:58.795 ERROR 12484 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-8001]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_65]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at xiaopeng666.top.Application.main(Application.java:15) [main/:na]
+
+2017-06-15 10:32:58.798 ERROR 12484 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8001]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8001]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:158) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:234) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:179) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.2.RELEASE.jar:4.3.2.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:369) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:313) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1185) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1174) [spring-boot-1.4.0.RELEASE.jar:1.4.0.RELEASE]
+	at xiaopeng666.top.Application.main(Application.java:15) [main/:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1042) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:152) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_65]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_65]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_65]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:229) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1035) ~[tomcat-embed-core-8.5.4.jar:8.5.4]
+	... 14 common frames omitted
+
+2017-06-15 10:32:58.815  INFO 12484 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-06-15 10:32:58.845  INFO 12484 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enable debug logging (start with --debug)
+
+
+2017-06-15 10:32:58.855 ERROR 12484 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Embedded servlet container failed to start. Port 8001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
+
+2017-06-15 10:32:58.863  INFO 12484 --- [main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7193666c: startup date [Thu Jun 15 10:32:55 CST 2017]; root of context hierarchy
+2017-06-15 10:32:58.865  INFO 12484 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-06-15 10:32:58.878  INFO 12484 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2017-06-15 10:32:59.762  INFO 12484 --- [main] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2017-06-15 10:32:59.764  INFO 12484 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2017-06-15 10:32:59.765  INFO 12484 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-06-15 10:32:59.765  INFO 12484 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2017-06-15 10:32:59.766  INFO 12484 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'defaultSockJsTaskScheduler'
