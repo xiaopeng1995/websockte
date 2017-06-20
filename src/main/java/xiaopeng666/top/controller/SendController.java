@@ -32,6 +32,7 @@ public class SendController extends BasicController {
      */
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public ResponseMessage testGet(@RequestParam String test) {
+        logger.debug("/test GET test:{}",test);
         try {
             sender.send(test);
         }catch (Exception e)
@@ -49,8 +50,15 @@ public class SendController extends BasicController {
      */
     @RequestMapping(value = "/test", method = RequestMethod.POST)
     public ResponseMessage testPost(@RequestBody Map date) {
+        logger.debug("/test POST ");
+        try {
+            sender.send(date);
+        }catch (Exception e)
+        {
+            return failMessage();
+        }
+        return successMessage("true");
 
-        return successMessage(date);
     }
 
 

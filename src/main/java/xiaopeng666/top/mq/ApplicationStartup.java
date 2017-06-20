@@ -15,12 +15,17 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import xiaopeng666.top.config.ConfigProperties;
+import xiaopeng666.top.entity.MsgInfo;
 import xiaopeng666.top.entity.Registry;
+import xiaopeng666.top.util.JsonUtils;
 import xiaopeng666.top.websockte.MyWebSocket;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
+
+import static org.apache.coyote.http11.Constants.a;
 
 /**
  * rabbit.接收任务处理
@@ -90,10 +95,10 @@ public class ApplicationStartup {
                 List<MyWebSocket> a = (List<MyWebSocket>) Registry.INSTANCE.getValue().get("webSocketSet");
                 // 群发消息
                 try {
+                   // MsgInfo msgInfo = JsonUtils.Mapper.reader(new String(body), MsgInfo.class);
                     if (a.size() > 0) {
                         for (MyWebSocket item : a) {
                             item.sendMessage(ddf.format(new Date()) + "</br>" + new String(body));
-                            item.sendMessage(message.getMessageProperties().getHeaders().get("123").toString());
                         }
                     }
                 } catch (Exception e) {
