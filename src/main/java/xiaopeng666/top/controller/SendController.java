@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 import xiaopeng666.top.entity.ResponseMessage;
+import xiaopeng666.top.mq.Sender;
 
 import java.util.Map;
 
@@ -21,7 +22,8 @@ public class SendController extends BasicController {
 
     @Autowired
     ResponseMessage responseMessage;
-
+    @Autowired
+    Sender sender;
     /**
      * test 数据
      *
@@ -30,7 +32,13 @@ public class SendController extends BasicController {
      */
     @RequestMapping(value = "/test", method = RequestMethod.GET)
     public ResponseMessage testGet(@RequestParam String test) {
-        return successMessage(test);
+        try {
+            sender.send(test);
+        }catch (Exception e)
+        {
+            return failMessage();
+        }
+        return successMessage("");
     }
 
     /**
