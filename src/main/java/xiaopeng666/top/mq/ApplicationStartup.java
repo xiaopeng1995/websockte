@@ -93,6 +93,7 @@ public class ApplicationStartup {
                     if (a.size() > 0) {
                         for (MyWebSocket item : a) {
                             item.sendMessage(ddf.format(new Date()) + "</br>" + new String(body));
+                            item.sendMessage(message.getMessageProperties().getHeaders().get("123").toString());
                         }
                     }
                 } catch (Exception e) {
